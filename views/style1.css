@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    /* background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* display: grid; */
+    /* place-items: center; */
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+h1{  
+     color: white;
+    position: absolute;
+   top: 27vh;
+    left: 10vw;
+    /* border: 2px solid white; */
+    width: 80vw;
+    height: 10vh;
+    text-align: center;
+    z-index: 100;
+    font-size: 1.3rem;
+    letter-spacing: 6px;
+    font-family: 'Poppins',sans-serif;
+    font-weight:900;
+    /* padding-right: 20px ; */
+
+}
+
+
+.circle{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    background: linear-gradient(to right, #36183d, #f698ff);
+    border-radius: 50%;
+    animation: rotate 0.7s linear infinite;
+    position: relative;
+    /* border: 0.3px solid white; */
+    /* margin-top: 300px; */
+}
+
+.circle:before{
+    content: "";
+    height: 74px;
+    width: 74px;
+    top: 3px;
+    text-align: center;
+    left: 3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);  
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+a{
+    /* border: 2px solid white; */
+    
+    color: rgb(255, 255, 255);
+    position: relative;
+    left:-47px;
+}
+
+a:hover{
+    color:grey;
+}

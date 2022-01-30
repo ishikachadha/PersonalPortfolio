@@ -1,0 +1,97 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Ishika&apos;s Portfolio
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap', rel='stylesheet')
+  style 
+     include style.css
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,500&display=swap', rel='stylesheet')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display&family=Raleway:wght@100&display=swap', rel='stylesheet')
+header
+  #yes.menu(onclick='onClickMenu()')
+    #bar1.bar
+    #bar2.bar
+    #bar3.bar
+  ul#nav.nav
+    li
+      a(href='https://www.instagram.com/squishy_ishika/', target='blank') INSTAGRAM
+    li
+      a(href='https://squishywrites.blogspot.com/', target='blank') BLOG
+    li
+      a(href='https://www.linkedin.com/in/ishika-chadha-a31763205/', target='blank') LINKEDIN
+    li
+      a(href='https://twitter.com/ishika_2811', target='blank') TWITTER
+    li
+      a(href='https://github.com/ishikachadha', target='blank') GITHUB
+main
+  section.home
+    // <img src="img/cpy.jpg" alt="image">
+    .desc
+      h1 HI THERE, I&apos;M
+      h2 ishika.
+      h3 WRITER + DEVELOPER
+      p2 A self-taught Front End Web Developer and a Writer based in Rourkela, Odisha
+      a.hi(href='#refer') HIRE ME
+      // <button class="btn"><a href="#refer">HIRE ME</a></button>
+    div
+     img(src='myim.jpg', alt='image')
+  section.about
+    h1 ABOUT ME
+    h2 A bit about myself!
+    // <div class="divide">
+    p1
+      | Greetings! My name is Ishika. I'm a full stack Web Developer and a Content Writer, pursuing my graduation from Veer Surendra Sai University of Technology, Burla. I’m an average, middle-class girl with nothing exciting in my background. I believe that people should do things in which they are good at or in which their heart lies. I thought the same thing when I started my poetry blog, The Mystikal Lyric. People say a lot. So I watch what they do!
+    // <img src="img/bgimg.jpg" alt="bgimg">
+    // </div>
+    // <div class="edtn">
+    h2 Education
+    p2.education B.Tech in Chemical Engineering, VSSUT (2019-2023)
+    br
+    p3.place Burla, Sambalpur
+    br
+    p2.education.less Higher Secondary at St. Joseph&apos;s School (2017-2019)
+    br
+    p3.place Hamirpur, Rourkela
+    // </div>
+  section.work
+    h1 EXPERIENCE
+    p.exp.exp1
+      | Interned as Content Head and Marketing Team Member at Youth India Foundation, Burla Chapter
+    br
+    p.exp Hostel Mess Secretary at Visakha Hall of Residence, Burla
+    br
+    p.exp Member of SSG Society, VSSUT, Burla
+    br
+    p.exp Part Time Poetry Blogger
+    br
+    p.exp Worked as a YouTube lecturer and Content Writer at Unlock Education
+  section#refer.contact
+    h1 CONTACT ME
+    p
+      | Get in touch with me via the form below or by emailing at 
+      a(href='mailto:ishikachadha2@gmail.com') ishikachadha2@gmail.com
+      | .
+    form(action='/home', method='post')
+      .form-group
+        label(for='name') Name:
+        input#name.hey(type='text', name='name', placeholder='Enter your name')
+      .form-group
+        label(for='email') Email:
+        input#email.hey(type='email', name='email', placeholder='Enter your email address')
+      .form-group
+        label(for='phone') Phone Number:
+        input#phone.hey(type='text', name='phoneNo', placeholder='Enter your phone number')
+      .form-group
+        label(for='message') Message:
+        textarea#message(name='message', placeholder='Enter your message', cols='23', rows='7')
+      .form-group
+        input.hey2(type='submit', value='SUBMIT')
+script
+      include script.js
